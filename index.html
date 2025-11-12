@@ -1,0 +1,1019 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Cria.ID — Marketing · Criatividade · Tecnologia</title>
+    <meta
+      name="description"
+      content="Cria.ID: sites, landing pages, automações e produtos digitais para gerar tráfego, leads e vendas. Transformamos ideias em estratégia digital."
+    />
+    <meta name="theme-color" content="#8e236a" />
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Cria.ID" />
+    <meta
+      property="og:title"
+      content="Cria.ID — Sites que vendem. Automação que escala."
+    />
+    <meta
+      property="og:description"
+      content="Sites, LPs e automações focadas em performance. Do rápido ao escalável."
+    />
+    <meta property="og:image" content="/og-image.jpg" />
+    <meta property="og:locale" content="pt_BR" />
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Cria.ID — Sites que vendem. Automação que escala."
+    />
+    <meta
+      name="twitter:description"
+      content="Sites, LPs e automações focadas em performance. Do rápido ao escalável."
+    />
+    <meta name="twitter:image" content="/og-image.jpg" />
+
+    <!-- Favicon (substitua pelos seus arquivos) -->
+    <link rel="icon" href="assets/media/favicon.png" />
+
+    <!-- Tailwind CSS CDN (produção leve – pode migrar para build local depois) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brand1: "#8e236a",
+              brand2: "#aa398c",
+              brand3: "#ff00bb",
+              brand4: "#80406f",
+              brandBg: "#f2f2f2",
+              brandInk: "#332b31",
+            },
+            boxShadow: {
+              soft: "0 10px 30px rgba(0,0,0,0.06)",
+            },
+            fontFamily: {
+              sans: [
+                "Inter",
+                "system-ui",
+                "Segoe UI",
+                "Roboto",
+                "Ubuntu",
+                "sans-serif",
+              ],
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- JSON-LD: organização -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Cria.ID",
+        "url": "https://cria.id",
+        "logo": "/logo.png",
+        "sameAs": ["https://www.instagram.com/cria.id.digital"],
+        "description": "Agência de marketing, criatividade e tecnologia. Sites, landing pages, automações e produtos digitais."
+      }
+    </script>
+    <style>
+      /* Suaviza animações e preferências do usuário */
+      @media (prefers-reduced-motion: reduce) {
+        * {
+          animation: none !important;
+          transition: none !important;
+        }
+      }
+    </style>
+  </head>
+  <body
+    class="bg-brandBg text-brandInk font-sans selection:bg-brand2/20 selection:text-brandInk/90"
+  >
+    <!-- Header -->
+    <header
+      class="sticky top-0 z-40 backdrop-blur supports-backdrop-blur:bg-white/60 bg-white/80 border-b border-white/50"
+    >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex h-16 items-center justify-between">
+          <a href="#home" class="flex items-center gap-3 group">
+            <img src="assets/media/logo.png" alt="Cria.ID" class="h-9 w-auto" />
+            <div class="leading-tight">
+              <div class="font-extrabold tracking-tight sr-only">Cria.ID</div>
+              <div class="text-xs opacity-70">
+                Marketing · Criatividade · Tecnologia
+              </div>
+            </div>
+          </a>
+          <nav class="hidden md:flex items-center gap-8 text-sm">
+            <a href="#servicos" class="hover:text-brand1">Serviços</a>
+            <a href="#pacotes" class="hover:text-brand1">Pacotes</a>
+            <a href="#portfolio" class="hover:text-brand1">Portfólio</a>
+            <a href="#processo" class="hover:text-brand1">Processo</a>
+            <a href="#contato" class="hover:text-brand1">Contato</a>
+          </nav>
+          <div class="flex items-center gap-2">
+            <a
+              href="https://wa.me/5519981978909?text=Oi%20Cria.ID!%20Quero%20um%20site%20que%20vende."
+              target="_blank"
+              rel="noopener"
+              class="hidden sm:inline-flex items-center gap-2 rounded-2xl bg-brand1 px-4 py-2 text-white font-semibold shadow-soft hover:brightness-110 focus:outline-none focus:ring-2 focus:ring-brand2 focus:ring-offset-2"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+                class="w-5 h-5 fill-current"
+              >
+                <path
+                  d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.51-5.81C.234 5.3 5.443 0 12.02 0c3.17 0 6.167 1.24 8.41 3.49a11.77 11.77 0 013.497 8.39c-.003 6.574-5.312 11.89-11.883 11.89a11.9 11.9 0 01-5.606-1.42L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.593 5.448 0 9.886-4.434 9.889-9.877.003-5.462-4.415-9.89-9.881-9.893-5.452 0-9.887 4.433-9.89 9.885a9.82 9.82 0 001.528 5.257l-.999 3.648 3.961-.993zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.03-.967-.272-.099-.47-.149-.669.149-.198.297-.767.966-.94 1.164-.173.199-.347.224-.644.075-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.52.149-.174.198-.298.297-.497.099-.198.05-.372-.025-.521-.075-.149-.669-1.612-.916-2.207-.242-.58-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.262.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.29.173-1.414z"
+                />
+              </svg>
+              Falar no WhatsApp
+            </a>
+            <button
+              id="menuBtn"
+              class="md:hidden inline-flex items-center justify-center rounded-2xl p-2 hover:bg-brandBg focus:outline-none focus:ring-2 focus:ring-brand2"
+              aria-label="Abrir menu"
+            >
+              <svg
+                id="menuIcon"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                class="w-6 h-6 text-[#8e236a]"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <nav
+          id="mobileNav"
+          class="md:hidden hidden pb-4 animate-[fadeIn_.2s_ease-in-out]"
+        >
+          <ul class="grid gap-3 text-sm">
+            <li>
+              <a
+                class="block px-2 py-2 rounded-lg hover:bg-brandBg"
+                href="#servicos"
+                >Serviços</a
+              >
+            </li>
+            <li>
+              <a
+                class="block px-2 py-2 rounded-lg hover:bg-brandBg"
+                href="#pacotes"
+                >Pacotes</a
+              >
+            </li>
+            <li>
+              <a
+                class="block px-2 py-2 rounded-lg hover:bg-brandBg"
+                href="#portfolio"
+                >Portfólio</a
+              >
+            </li>
+            <li>
+              <a
+                class="block px-2 py-2 rounded-lg hover:bg-brandBg"
+                href="#processo"
+                >Processo</a
+              >
+            </li>
+            <li>
+              <a
+                class="block px-2 py-2 rounded-lg hover:bg-brandBg"
+                href="#contato"
+                >Contato</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <section id="home" class="relative overflow-hidden">
+      <div
+        class="absolute inset-0 -z-10 bg-gradient-to-b from-white via-white to-brandBg"
+      ></div>
+      <div
+        class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24 grid md:grid-cols-2 gap-10 items-center"
+      >
+        <div>
+          <h1
+            class="text-4xl md:text-5xl font-extrabold tracking-tight leading-tight"
+          >
+            Sites que
+            <span
+              class="text-transparent bg-clip-text bg-gradient-to-r from-brand1 via-brand2 to-brand3"
+              >vendem</span
+            >. Automação que
+            <span class="underline decoration-brand2/30">escala</span>.
+          </h1>
+          <p class="mt-5 text-lg md:text-xl text-black/70 max-w-xl">
+            Transformamos ideias em estratégias digitais: landing pages, sites
+            profissionais e automações que geram tráfego, leads e vendas.
+          </p>
+          <div class="mt-8 flex flex-wrap items-center gap-3">
+            <a
+              href="https://wa.me/5519981978909?text=Quero%20um%20site%20que%20vende"
+              target="_blank"
+              rel="noopener"
+              class="inline-flex items-center gap-2 rounded-2xl bg-brand1 px-5 py-3 text-white font-semibold shadow-soft hover:brightness-110 focus:outline-none focus:ring-2 focus:ring-brand2 focus:ring-offset-2"
+            >
+              Começar pelo WhatsApp
+            </a>
+            <a
+              href="#portfolio"
+              class="inline-flex items-center gap-2 rounded-2xl border border-brand4/20 px-5 py-3 font-semibold hover:bg-white/70"
+              >Ver exemplos</a
+            >
+          </div>
+          <div
+            class="mt-8 grid grid-cols-2 sm:flex sm:flex-wrap gap-4 text-sm text-black/70"
+          >
+            <div class="flex items-center gap-2">
+              <span class="w-2 h-2 rounded-full bg-brand1"></span> LP em 7 dias
+            </div>
+            <div class="flex items-center gap-2">
+              <span class="w-2 h-2 rounded-full bg-brand2"></span> SEO e
+              métricas
+            </div>
+            <div class="flex items-center gap-2">
+              <span class="w-2 h-2 rounded-full bg-brand3"></span> Integração
+              WhatsApp
+            </div>
+            <div class="flex items-center gap-2">
+              <span class="w-2 h-2 rounded-full bg-brand4"></span> Automação
+              pronta
+            </div>
+          </div>
+        </div>
+        <div class="relative">
+          <div
+            class="aspect-[4/3] rounded-3xl shadow-soft bg-white ring-1 ring-black/5 p-4 grid place-items-center"
+          >
+            <!-- Placeholder do mockup. Substitua por imagem real de portfólio -->
+            <div
+              class="w-full h-full rounded-2xl bg-gradient-to-br from-brand1/15 via-brand3/10 to-brand4/10 grid place-items-center"
+            >
+              <div class="text-center">
+                <p class="text-3xl font-extrabold">Cria.ID</p>
+                <p class="opacity-70">Mockup do portfólio aqui</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="absolute -bottom-6 -left-6 bg-white/80 backdrop-blur border border-black/5 rounded-2xl px-4 py-3 shadow-soft"
+          >
+            <p class="text-sm">
+              <span class="font-semibold">+ Resultados:</span> CTR ↑, CAC ↓,
+              mais leads qualificados.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Serviços -->
+    <section id="servicos" class="py-16 md:py-24">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight">
+            Serviços
+          </h2>
+          <p class="mt-3 text-black/70">
+            De landing pages a aplicativos: tudo o que seu negócio precisa para
+            crescer digitalmente.
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-6">
+          <!-- LPs & Sites -->
+          <div class="rounded-3xl bg-white shadow-soft p-6 ring-1 ring-black/5">
+            <div
+              class="w-12 h-12 rounded-2xl bg-brand1/10 grid place-items-center mb-4"
+            >
+              <span aria-hidden="true" class="text-brand1 text-xl">⚡</span>
+            </div>
+            <h3 class="font-bold text-lg">Landing Pages & Sites</h3>
+            <p class="mt-2 text-sm text-black/70">
+              Design, copy e SEO focados em conversão. Páginas rápidas,
+              responsivas e mensuráveis.
+            </p>
+            <ul class="mt-4 text-sm space-y-2">
+              <li>• LP em até 7 dias</li>
+              <li>• SEO básico + métricas (GA4/Pixel)</li>
+              <li>• Integração WhatsApp/Form</li>
+            </ul>
+          </div>
+
+          <!-- Sistemas Web -->
+          <div class="rounded-3xl bg-white shadow-soft p-6 ring-1 ring-black/5">
+            <div
+              class="w-12 h-12 rounded-2xl bg-brand2/10 grid place-items-center mb-4"
+            >
+              <span aria-hidden="true" class="text-brand2 text-xl">🧩</span>
+            </div>
+            <h3 class="font-bold text-lg">Sistemas Web sob medida</h3>
+            <p class="mt-2 text-sm text-black/70">
+              Painéis administrativos, dashboards e CRMs personalizados para seu
+              processo.
+            </p>
+            <ul class="mt-4 text-sm space-y-2">
+              <li>• React/Next.js, Vue ou Angular</li>
+              <li>• Node/PHP (REST) · Banco relacional</li>
+              <li>• Autenticação e RBAC</li>
+            </ul>
+          </div>
+
+          <!-- Aplicativos Mobile -->
+          <div class="rounded-3xl bg-white shadow-soft p-6 ring-1 ring-black/5">
+            <div
+              class="w-12 h-12 rounded-2xl bg-brand3/10 grid place-items-center mb-4"
+            >
+              <span aria-hidden="true" class="text-brand3 text-xl">📱</span>
+            </div>
+            <h3 class="font-bold text-lg">Aplicativos Mobile</h3>
+            <p class="mt-2 text-sm text-black/70">
+              Apps híbridos (React Native) e PWAs: uma base de código, múltiplas
+              plataformas.
+            </p>
+            <ul class="mt-4 text-sm space-y-2">
+              <li>• iOS, Android e Web (PWA)</li>
+              <li>• Push, câmera e geolocalização</li>
+              <li>• Publicação nas stores</li>
+            </ul>
+          </div>
+
+          <!-- APIs & Integrações -->
+          <div class="rounded-3xl bg-white shadow-soft p-6 ring-1 ring-black/5">
+            <div
+              class="w-12 h-12 rounded-2xl bg-brand4/10 grid place-items-center mb-4"
+            >
+              <span aria-hidden="true" class="text-brand4 text-xl">🔗</span>
+            </div>
+            <h3 class="font-bold text-lg">APIs & Integrações</h3>
+            <p class="mt-2 text-sm text-black/70">
+              Conectamos seu negócio a pagamentos, CRMs, ERPs e plataformas de
+              automação.
+            </p>
+            <ul class="mt-4 text-sm space-y-2">
+              <li>• Pagamentos (Pix/Cartão)</li>
+              <li>• CRM/ERP e Google Sheets</li>
+              <li>• Webhooks e filas</li>
+            </ul>
+          </div>
+
+          <!-- Automação & Chatbots -->
+          <div class="rounded-3xl bg-white shadow-soft p-6 ring-1 ring-black/5">
+            <div
+              class="w-12 h-12 rounded-2xl bg-brand1/10 grid place-items-center mb-4"
+            >
+              <span aria-hidden="true" class="text-brand1 text-xl">🤖</span>
+            </div>
+            <h3 class="font-bold text-lg">Automação & Chatbots</h3>
+            <p class="mt-2 text-sm text-black/70">
+              Fluxos de atendimento, captação de leads e delivery no WhatsApp
+              com relatórios.
+            </p>
+            <ul class="mt-4 text-sm space-y-2">
+              <li>• WhatsApp Business API</li>
+              <li>• Cardápio + pedido (sem taxas)</li>
+              <li>• Relatórios mensais</li>
+            </ul>
+          </div>
+
+          <!-- Social Media & Branding -->
+          <div class="rounded-3xl bg-white shadow-soft p-6 ring-1 ring-black/5">
+            <div
+              class="w-12 h-12 rounded-2xl bg-brand2/10 grid place-items-center mb-4"
+            >
+              <span aria-hidden="true" class="text-brand2 text-xl">🎨</span>
+            </div>
+            <h3 class="font-bold text-lg">Social Media & Branding</h3>
+            <p class="mt-2 text-sm text-black/70">
+              Pacotes de conteúdo, identidade visual e campanhas de awareness e
+              performance.
+            </p>
+            <ul class="mt-4 text-sm space-y-2">
+              <li>• Identidade visual e kits</li>
+              <li>• Conteúdo mensal e anúncios</li>
+              <li>• Direção de arte e copy</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pacotes -->
+    <section id="pacotes" class="py-16 md:py-24 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight">
+            Pacotes
+          </h2>
+          <p class="mt-3 text-black/70">
+            Planos simples, foco em resultado. Personalizamos para o seu
+            momento.
+          </p>
+        </div>
+        <div class="grid md:grid-cols-3 gap-6 items-stretch">
+          <!-- Plano 1 -->
+          <div
+            class="rounded-3xl bg-brandBg p-6 ring-1 ring-black/5 shadow-soft flex flex-col"
+          >
+            <h3 class="font-bold text-lg">LP Express</h3>
+            <p class="text-sm text-black/70 mt-1">Landing page em até 7 dias</p>
+            <div class="mt-4 text-3xl font-extrabold">R$ 450</div>
+            <ul class="mt-4 text-sm space-y-2 flex-1">
+              <li>• Layout premium e responsivo</li>
+              <li>• Integração WhatsApp/Form</li>
+              <li>• SEO básico + GA4</li>
+              <li>• 1 rodada de ajustes</li>
+            </ul>
+            <a
+              href="https://wa.me/5519981978909?text=Quero%20LP%20Express"
+              target="_blank"
+              rel="noopener"
+              class="mt-6 inline-flex justify-center rounded-2xl bg-brand1 px-4 py-2 text-white font-semibold shadow-soft"
+              >Contratar</a
+            >
+          </div>
+          <!-- Plano 2 (Destaque) -->
+          <div
+            class="relative rounded-3xl bg-gradient-to-br from-white to-brandBg p-6 ring-2 ring-brand2/40 shadow-soft flex flex-col"
+          >
+            <div
+              class="absolute -top-3 right-6 text-xs bg-brand2 text-white px-2 py-1 rounded-full shadow"
+            >
+              Mais vendido
+            </div>
+            <h3 class="font-bold text-lg">Site Profissional</h3>
+            <p class="text-sm text-black/70 mt-1">Institucional completo</p>
+            <div class="mt-4 text-3xl font-extrabold">R$ 990</div>
+            <ul class="mt-4 text-sm space-y-2 flex-1">
+              <li>• Até 5 páginas + blog</li>
+              <li>• SEO técnico + on-page</li>
+              <li>• Pixel/GA4 + formulários</li>
+              <li>• 2 rodadas de ajustes</li>
+            </ul>
+            <a
+              href="https://wa.me/5519981978909?text=Quero%20Site%20Profissional"
+              target="_blank"
+              rel="noopener"
+              class="mt-6 inline-flex justify-center rounded-2xl bg-brand1 px-4 py-2 text-white font-semibold shadow-soft"
+              >Contratar</a
+            >
+          </div>
+          <!-- Plano 3 -->
+          <div
+            class="rounded-3xl bg-brandBg p-6 ring-1 ring-black/5 shadow-soft flex flex-col"
+          >
+            <h3 class="font-bold text-lg">Delivery no Whats</h3>
+            <p class="text-sm text-black/70 mt-1">
+              Cardápio + pedidos + chatbot
+            </p>
+            <div class="mt-4">
+              <div class="text-3xl font-extrabold">R$ 600</div>
+              <div class="text-sm opacity-70">+ R$ 100/mês (suporte)</div>
+            </div>
+            <ul class="mt-4 text-sm space-y-2 flex-1">
+              <li>• Cardápio digital responsivo</li>
+              <li>• Chatbot confirmando pedidos</li>
+              <li>• Exportação para planilhas</li>
+              <li>• Relatórios mensais</li>
+            </ul>
+            <a
+              href="https://wa.me/5519981978909?text=Quero%20Delivery%20no%20Whats"
+              target="_blank"
+              rel="noopener"
+              class="mt-6 inline-flex justify-center rounded-2xl bg-brand1 px-4 py-2 text-white font-semibold shadow-soft"
+              >Contratar</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfólio (demos) -->
+    <section id="portfolio" class="py-16 md:py-24">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight">
+            Portfólio
+          </h2>
+          <p class="mt-3 text-black/70">
+            Alguns exemplos e demos que representam nosso padrão de entrega.
+          </p>
+        </div>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- 6 cards -->
+          <article
+            class="group rounded-3xl bg-white ring-1 ring-black/5 shadow-soft overflow-hidden"
+          >
+            <div
+              class="aspect-[16/10] bg-gradient-to-br from-brand1/15 via-brand2/10 to-brand3/15"
+            ></div>
+            <div class="p-5">
+              <h3 class="font-semibold">Restaurante — LP Delivery</h3>
+              <p class="text-sm text-black/70">Cardápio + pedido no WhatsApp</p>
+            </div>
+          </article>
+          <article
+            class="group rounded-3xl bg-white ring-1 ring-black/5 shadow-soft overflow-hidden"
+          >
+            <div
+              class="aspect-[16/10] bg-gradient-to-br from-brand4/15 via-brand3/10 to-brand1/15"
+            ></div>
+            <div class="p-5">
+              <h3 class="font-semibold">Psicólogo — Site Profissional</h3>
+              <p class="text-sm text-black/70">
+                Autoridade, blog e agendamento
+              </p>
+            </div>
+          </article>
+          <article
+            class="group rounded-3xl bg-white ring-1 ring-black/5 shadow-soft overflow-hidden"
+          >
+            <div
+              class="aspect-[16/10] bg-gradient-to-br from-brand2/15 via-brand1/10 to-brand4/15"
+            ></div>
+            <div class="p-5">
+              <h3 class="font-semibold">Estética — LP com agendamento</h3>
+              <p class="text-sm text-black/70">SEO local + Whats + proof</p>
+            </div>
+          </article>
+          <article
+            class="group rounded-3xl bg-white ring-1 ring-black/5 shadow-soft overflow-hidden"
+          >
+            <div
+              class="aspect-[16/10] bg-gradient-to-br from-brand3/15 via-brand4/10 to-brand2/15"
+            ></div>
+            <div class="p-5">
+              <h3 class="font-semibold">Loja de Roupas — Catálogo</h3>
+              <p class="text-sm text-black/70">Coleção e CTA para Whats</p>
+            </div>
+          </article>
+          <article
+            class="group rounded-3xl bg-white ring-1 ring-black/5 shadow-soft overflow-hidden"
+          >
+            <div
+              class="aspect-[16/10] bg-gradient-to-br from-brand1/15 via-brand3/10 to-brand4/15"
+            ></div>
+            <div class="p-5">
+              <h3 class="font-semibold">Advogado — Presença Digital</h3>
+              <p class="text-sm text-black/70">
+                Autoridade, páginas essenciais
+              </p>
+            </div>
+          </article>
+          <article
+            class="group rounded-3xl bg-white ring-1 ring-black/5 shadow-soft overflow-hidden"
+          >
+            <div
+              class="aspect-[16/10] bg-gradient-to-br from-brand4/15 via-brand1/10 to-brand3/15"
+            ></div>
+            <div class="p-5">
+              <h3 class="font-semibold">Contabilidade — Geração de Leads</h3>
+              <p class="text-sm text-black/70">LP + e-book + automação</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Processo -->
+    <section id="processo" class="py-16 md:py-24 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight">
+            Processo
+          </h2>
+          <p class="mt-3 text-black/70">Clareza, prazo e foco em conversão.</p>
+        </div>
+        <ol class="grid md:grid-cols-4 gap-6">
+          <li class="rounded-3xl bg-brandBg p-6 ring-1 ring-black/5">
+            <p class="text-xs opacity-70">01</p>
+            <h3 class="font-bold mt-1">Briefing</h3>
+            <p class="text-sm text-black/70 mt-1">
+              Entendemos objetivos e criamos o plano.
+            </p>
+          </li>
+          <li class="rounded-3xl bg-brandBg p-6 ring-1 ring-black/5">
+            <p class="text-xs opacity-70">02</p>
+            <h3 class="font-bold mt-1">Design</h3>
+            <p class="text-sm text-black/70 mt-1">
+              Wireframe, layout e copy orientada a ação.
+            </p>
+          </li>
+          <li class="rounded-3xl bg-brandBg p-6 ring-1 ring-black/5">
+            <p class="text-xs opacity-70">03</p>
+            <h3 class="font-bold mt-1">Implementação</h3>
+            <p class="text-sm text-black/70 mt-1">
+              Desenvolvimento, SEO e integrações.
+            </p>
+          </li>
+          <li class="rounded-3xl bg-brandBg p-6 ring-1 ring-black/5">
+            <p class="text-xs opacity-70">04</p>
+            <h3 class="font-bold mt-1">Lançamento</h3>
+            <p class="text-sm text-black/70 mt-1">
+              Publicação, métricas e otimizações.
+            </p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- CTA final -->
+    <section class="py-16 md:py-24">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div
+          class="rounded-3xl bg-gradient-to-br from-brand1 via-brand2 to-brand3 p-[1px] shadow-soft"
+        >
+          <div
+            class="rounded-3xl bg-white px-6 py-10 md:px-12 md:py-14 grid md:grid-cols-2 gap-8 items-center"
+          >
+            <div>
+              <h3 class="text-2xl md:text-3xl font-extrabold tracking-tight">
+                Pronto para dar o próximo passo?
+              </h3>
+              <p class="mt-2 text-black/70">
+                Vamos construir sua presença digital e acelerar resultados.
+              </p>
+            </div>
+            <div class="flex gap-3 md:justify-end">
+              <a
+                href="https://wa.me/5519981978909?text=Quero%20conversar%20com%20a%20Cria.ID"
+                target="_blank"
+                rel="noopener"
+                class="inline-flex items-center justify-center rounded-2xl bg-brand1 px-5 py-3 text-white font-semibold shadow-soft"
+                >Falar no WhatsApp</a
+              >
+              <a
+                href="#contato"
+                class="inline-flex items-center justify-center rounded-2xl border border-brand4/20 px-5 py-3 font-semibold hover:bg-white/70"
+                >Enviar Briefing</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato" class="py-16 md:py-24 bg-white">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-10">
+          <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight">
+            Contato
+          </h2>
+          <p class="mt-3 text-black/70">
+            Conte rapidamente sobre seu projeto. Respondemos em até 24h úteis.
+          </p>
+        </div>
+        <!-- Form simples (Netlify-compatible). Substitua action/endpoint conforme necessidade -->
+        <form
+          name="briefing-criaid"
+          method="POST"
+          data-netlify="true"
+          netlify-honeypot="bot-field"
+          class="w-full max-w-3xl mx-auto"
+        >
+          <input type="hidden" name="form-name" value="briefing-criaid" />
+          <p class="hidden">
+            <label>Não preencha: <input name="bot-field" /></label>
+          </p>
+
+          <!-- Progress -->
+          <div class="mb-6">
+            <div class="flex items-center gap-2 text-xs font-semibold">
+              <div
+                id="progressBar"
+                class="h-2 w-full bg-brandBg rounded-xl overflow-hidden"
+              >
+                <div
+                  id="progressFill"
+                  class="h-2 bg-gradient-to-r from-brand1 via-brand2 to-brand3 w-[16%]"
+                ></div>
+              </div>
+              <span id="progressText" class="whitespace-nowrap">1/6</span>
+            </div>
+          </div>
+
+          <div class="grid gap-6">
+            <!-- STEP 1 -->
+            <div class="step" data-step="1">
+              <h3 class="text-xl font-extrabold">Conte sua ideia</h3>
+              <p class="text-sm text-black/70 mt-1">
+                Nós
+                <span class="font-semibold"
+                  >transformamos sua ideia em realidade</span
+                >. Descreva o que você tem em mente.
+              </p>
+              <label class="block mt-4">
+                <span class="text-sm font-medium">Sua ideia</span>
+                <textarea
+                  name="ideia"
+                  required
+                  rows="5"
+                  placeholder="Ex.: Quero uma landing page..."
+                  class="mt-1 w-full rounded-lg px-4 py-3 border border-[#9C8BBF] focus:outline-none focus:ring-2 focus:ring-[#6B4FBB] transition"
+                ></textarea>
+              </label>
+            </div>
+
+            <!-- STEP 2 -->
+            <div class="step hidden" data-step="2">
+              <h3 class="text-xl font-extrabold">O que vamos construir?</h3>
+              <div class="grid sm:grid-cols-2 gap-3 mt-4">
+                <label
+                  class="flex items-center gap-3 rounded-2xl border border-[#9C8BBF] p-3 cursor-pointer"
+                  ><input
+                    type="radio"
+                    name="tipo"
+                    value="Site/LP"
+                    required
+                  /><span>Site institucional / Landing Page</span></label
+                >
+                <label
+                  class="flex items-center gap-3 rounded-2xl border border-[#9C8BBF] p-3 cursor-pointer"
+                  ><input type="radio" name="tipo" value="Sistema Web" /><span
+                    >Sistema web</span
+                  ></label
+                >
+                <label
+                  class="flex items-center gap-3 rounded-2xl border border-[#9C8BBF] p-3 cursor-pointer"
+                  ><input type="radio" name="tipo" value="Aplicativo" /><span
+                    >Aplicativo</span
+                  ></label
+                >
+                <label
+                  class="flex items-center gap-3 rounded-2xl border border-[#9C8BBF] p-3 cursor-pointer"
+                  ><input
+                    type="radio"
+                    name="tipo"
+                    value="Automação/Integração"
+                  /><span>Automação / Integração</span></label
+                >
+              </div>
+            </div>
+
+            <!-- STEP 3 -->
+            <div class="step hidden" data-step="3">
+              <h3 class="text-xl font-extrabold">
+                Qual é o objetivo principal?
+              </h3>
+              <div class="grid sm:grid-cols-2 gap-3 mt-4">
+                <label
+                  class="flex items-center gap-3 rounded-2xl border border-[#9C8BBF] p-3 cursor-pointer"
+                  ><input
+                    type="radio"
+                    name="objetivo"
+                    value="Vendas"
+                    required
+                  /><span>Vendas</span></label
+                >
+                <label
+                  class="flex items-center gap-3 rounded-2xl border border-[#9C8BBF] p-3 cursor-pointer"
+                  ><input
+                    type="radio"
+                    name="objetivo"
+                    value="Autoridade"
+                  /><span>Autoridade/Presença</span></label
+                >
+                <label
+                  class="flex items-center gap-3 rounded-2xl border border-[#9C8BBF] p-3 cursor-pointer"
+                  ><input
+                    type="radio"
+                    name="objetivo"
+                    value="Organização"
+                  /><span>Organização/Operação</span></label
+                >
+                <label
+                  class="flex items-center gap-3 rounded-2xl border border-[#9C8BBF] p-3 cursor-pointer"
+                  ><input
+                    type="radio"
+                    name="objetivo"
+                    value="Atendimento"
+                  /><span>Atendimento/Leads</span></label
+                >
+              </div>
+              <label class="block mt-3">
+                <span class="text-sm">Outro objetivo (opcional)</span>
+                <input
+                  name="objetivo_outro"
+                  placeholder="Descreva"
+                  class="mt-1 w-full rounded-lg px-4 py-3 border border-[#9C8BBF] focus:outline-none focus:ring-2 focus:ring-[#6B4FBB]"
+                />
+              </label>
+            </div>
+
+            <!-- STEP 4 -->
+            <div class="step hidden" data-step="4">
+              <h3 class="text-xl font-extrabold">Orçamento & Prazo</h3>
+              <div class="mt-3">
+                <span class="text-sm font-medium">Orçamento estimado</span>
+                <div class="grid sm:grid-cols-2 gap-3 mt-2">
+                  <label
+                    class="flex items-center gap-3 rounded-2xl border border-[#9C8BBF] p-3 cursor-pointer"
+                    ><input
+                      type="radio"
+                      name="orcamento"
+                      value="R$ 1.000–3.000"
+                      required
+                    /><span>R$ 1.000–3.000</span></label
+                  >
+                  <label
+                    class="flex items-center gap-3 rounded-2xl border border-[#9C8BBF] p-3 cursor-pointer"
+                    ><input
+                      type="radio"
+                      name="orcamento"
+                      value="R$ 3.000–7.000"
+                    /><span>R$ 3.000–7.000</span></label
+                  >
+                  <label
+                    class="flex items-center gap-3 rounded-2xl border border-[#9C8BBF] p-3 cursor-pointer"
+                    ><input
+                      type="radio"
+                      name="orcamento"
+                      value="R$ 7.000+"
+                    /><span>R$ 7.000+</span></label
+                  >
+                  <label
+                    class="flex items-center gap-3 rounded-2xl border border-[#9C8BBF] p-3 cursor-pointer"
+                    ><input
+                      type="radio"
+                      name="orcamento"
+                      value="Não sei"
+                    /><span>Não sei ainda</span></label
+                  >
+                </div>
+              </div>
+              <div class="mt-4">
+                <span class="text-sm font-medium">Prazo desejado</span>
+                <div class="grid sm:grid-cols-3 gap-3 mt-2">
+                  <label
+                    class="flex items-center gap-3 rounded-2xl border border-[#9C8BBF] p-3 cursor-pointer"
+                    ><input
+                      type="radio"
+                      name="prazo"
+                      value="Imediato"
+                      required
+                    /><span>Imediato</span></label
+                  >
+                  <label
+                    class="flex items-center gap-3 rounded-2xl border border-[#9C8BBF] p-3 cursor-pointer"
+                    ><input type="radio" name="prazo" value="15–30 dias" /><span
+                      >15–30 dias</span
+                    ></label
+                  >
+                  <label
+                    class="flex items-center gap-3 rounded-2xl border border-[#9C8BBF] p-3 cursor-pointer"
+                    ><input type="radio" name="prazo" value="30–60 dias" /><span
+                      >30–60 dias</span
+                    ></label
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- STEP 5 -->
+            <div class="step hidden" data-step="5">
+              <h3 class="text-xl font-extrabold">Como falamos com você?</h3>
+              <div class="grid md:grid-cols-2 gap-4 mt-4">
+                <label class="block"
+                  ><span class="text-sm font-medium">Nome</span
+                  ><input
+                    name="nome"
+                    required
+                    class="mt-1 w-full rounded-lg px-4 py-3 border border-[#9C8BBF] focus:outline-none focus:ring-2 focus:ring-[#6B4FBB]"
+                /></label>
+                <label class="block"
+                  ><span class="text-sm font-medium">E-mail</span
+                  ><input
+                    type="email"
+                    name="email"
+                    required
+                    class="mt-1 w-full rounded-lg px-4 py-3 border border-[#9C8BBF] focus:outline-none focus:ring-2 focus:ring-[#6B4FBB]"
+                /></label>
+                <label class="block md:col-span-2"
+                  ><span class="text-sm font-medium">WhatsApp</span
+                  ><input
+                    name="whatsapp"
+                    placeholder="DDD + número"
+                    class="mt-1 w-full rounded-lg px-4 py-3 border border-[#9C8BBF] focus:outline-none focus:ring-2 focus:ring-[#6B4FBB]"
+                /></label>
+              </div>
+              <label class="flex items-center gap-2 mt-4"
+                ><input
+                  type="checkbox"
+                  name="contato_preferido"
+                  value="WhatsApp"
+                /><span class="text-sm"
+                  >Prefiro ser contactado pelo WhatsApp</span
+                ></label
+              >
+            </div>
+
+            <!-- STEP 6 -->
+            <div class="step hidden" data-step="6">
+              <h3 class="text-xl font-extrabold">Revisar e enviar</h3>
+              <p class="text-sm text-black/70 mt-1">
+                Confira o resumo antes de enviar. Você pode voltar e ajustar
+                qualquer etapa.
+              </p>
+              <div
+                id="resumoBox"
+                class="mt-4 rounded-2xl bg-brandBg p-4 text-sm"
+              ></div>
+              <textarea
+                name="resumo"
+                id="resumoHidden"
+                class="hidden"
+              ></textarea>
+            </div>
+
+            <!-- Controles -->
+            <div
+              class="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 mt-2"
+            >
+              <button
+                type="button"
+                id="prevBtn"
+                class="sm:flex-1 inline-flex justify-center rounded-2xl border border-brand4/20 px-5 py-3 font-semibold disabled:opacity-40"
+              >
+                Voltar
+              </button>
+              <button
+                type="button"
+                id="nextBtn"
+                class="sm:flex-1 inline-flex justify-center rounded-2xl bg-brand1 px-5 py-3 text-white font-semibold shadow-soft"
+              >
+                Próximo
+              </button>
+              <button
+                type="submit"
+                id="submitBtn"
+                class="hidden sm:flex-1 inline-flex justify-center rounded-2xl bg-brand1 px-5 py-3 text-white font-semibold shadow-soft"
+              >
+                Enviar
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <footer class="py-10 border-t border-black/5 text-sm">
+      <div
+        class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-4"
+      >
+        <p>
+          © <span id="year"></span> Cria.ID — Marketing · Criatividade ·
+          Tecnologia
+        </p>
+        <nav class="flex items-center gap-4 opacity-80">
+          <a
+            href="https://www.instagram.com/cria.id.digital"
+            target="_blank"
+            rel="noopener"
+            class="hover:text-brand1"
+            >Instagram</a
+          >
+          <a href="#" class="hover:text-brand1">Termos</a>
+          <a href="#" class="hover:text-brand1">Privacidade</a>
+        </nav>
+      </div>
+    </footer>
+
+    <script>
+      // Utilidades simples
+      document.getElementById("year").textContent = new Date().getFullYear();
+
+      const menuBtn = document.getElementById("menuBtn");
+      const mobileNav = document.getElementById("mobileNav");
+      menuBtn?.addEventListener("click", () => {
+        mobileNav.classList.toggle("hidden");
+      });
+    </script>
+    <script src="assets/js/form.js"></script>
+    <script src="assets/js/menu.js"></script>
+  </body>
+</html>
